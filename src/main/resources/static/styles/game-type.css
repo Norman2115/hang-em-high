@@ -1,0 +1,79 @@
+.game-type-title {
+  font-size: 3.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.game-type-button-container {
+  width: calc(100% - 40px);
+  max-width: 900px;
+  display: flex;
+  gap: 2rem;
+  padding: 20px;
+  justify-content: center;
+}
+
+.game-type-button {
+  position: relative;
+  min-height: 480px;
+  font-family: 'Cinzel', serif !important;
+  flex-grow: 1;
+  flex-basis: calc(50% - 2rem);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  border-radius: 10px;
+  border: 2px solid #333;
+  background: transparent;
+  box-shadow: 3px 3px #333;
+  cursor: pointer;
+}
+
+.game-type-button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+.game-type-icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  aspect-ratio: 1; 
+  margin-bottom: 20px;
+}
+
+.question-icon {
+  background-image: url(../images/hibiscus-malaysia.png);
+  opacity: 0.8;
+}
+
+.word-icon {
+  background-image: url(../images/rafflesia-malaysia.png);
+  opacity: 1;
+}
+
+.back-button {
+  font-family: 'Cinzel', serif !important;
+  width: 20%;
+  margin-top: 20px;
+  font-size: 1.8rem;
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 3px 3px #333;
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}

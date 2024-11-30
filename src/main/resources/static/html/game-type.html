@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/game-type.css">
+  <link rel="icon" type="image/svg+xml" href="../images/malaysia-flag-rounded.svg">
+  <title>Document</title>
+</head>
+<body>  
+  <div class="background-decoration"></div>
+    <h1 class="game-type-title">Select Game Type</h1>
+    <div class="game-type-button-container">
+      <audio id="button-audio" src="../audio/button-click.wav"></audio>
+      <button class="game-type-button" onclick="playButtonAudio(); selectGameType('question')">
+        <div class="game-type-icon question-icon"></div>
+        Question-Based
+      </button>
+      <button class="game-type-button" onclick="playButtonAudio(); selectGameType('word')">
+        <div class="game-type-icon word-icon"></div>
+        Word-Guessing
+      </button>
+    </div>
+    <button class="back-button" onclick="backToMenu()">Back</button>
+    <script src="../scripts/game-type.js"></script>
+    <script src="../scripts/shared.js"></script>
+</body>
+</html>

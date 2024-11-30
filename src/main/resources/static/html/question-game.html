@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/game-common.css">
+  <link rel="stylesheet" href="../styles/question-game.css">
+  <link rel="icon" type="image/svg+xml" href="../images/malaysia-flag-rounded.svg">
+</head>
+
+<body>
+  <div class="background-decoration"></div>
+  <audio id="clock-ticking-audio" src="../audio/clock-ticking.mp3"></audio>
+  <button class="back-button" onclick="backToGameDifficulty()">Back</button>
+  <div class="hud-container">
+    <div class="timer-container">
+      <div class="timer-logo"></div>
+      <div class="timer-number">20</div>
+    </div>
+    <div class="score-container">
+      <div class="score-text">Score</div>
+      <div class="score-number">0</div>
+    </div>
+  </div>
+  <div class="hang-man-container">
+    <div class="hang-man-image"></div>
+  </div>
+  <div class="question-container">
+    <div class="question-text">What is Malaysia?</div>
+  </div>
+  <audio id="correct-audio" src="../audio/right-answer.mp3"></audio>
+  <audio id="wrong-audio" src="../audio/wrong-answer.mp3"></audio>
+  <audio id="streak-audio" src="../audio/Sweet.wav"></audio>
+  <audio id="streak-audio-2" src="../audio/Great.wav"></audio>
+  <audio id="streak-audio-3" src="../audio/Awesome.wav"></audio>
+  <div class="answer-container">
+    <div class="answer-card answer-text">A country</div>
+    <div class="answer-card answer-text">A state</div>
+    <div class="answer-card answer-text">A city</div>
+    <div class="answer-card answer-text">A postcode</div>
+  </div>
+  <audio id="button-audio" src="../audio/button-click.wav"></audio>
+  <audio id="game-over-audio" src="../audio/brass-fail.mp3"></audio>
+  <audio id="game-win-audio" src="../audio/victory-sound.mp3"></audio>
+  <audio id="game-win-audio-2" src="../audio/YouWin.wav"></audio>
+  <div class="modal" id="game-modal" style="display: none;">
+    <div class="modal-content">
+      <h2 class="modal-title" id="modal-title">Game Over</h2>
+      <p class="modal-text">Your score is <span class="score" id="modal-score">0</span></p>
+      <div class="modal-buttons">
+        <button class="modal-button" id="play-again-button" onclick="playAgain()">Play Again</button>
+        <button class="modal-button" id="back-to-menu-button" onclick="backToMenu()">Back to Menu</button>
+      </div>
+    </div>
+  </div>
+  <audio id="countdown-audio" src="../audio/countdown.mp3"></audio>
+  <div class="countdown-container">
+    <div class="countdown-text">3</div>
+  </div>
+  <script src="../scripts/shared.js"></script>
+  <script src="../scripts/question-game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/main-menu.css">
+  <link rel="icon" type="image/svg+xml" href="../images/malaysia-flag-rounded.svg">
+  <title>Hang 'Em High</title>
+</head>
+
+<body>
+  <div class="background-decoration"></div>
+  <div class="game-title-container">
+    <h1 class="game-title title-animation">
+      Hang
+      <span style="color: #be9e0d;">'</span><span style="color: #08086d;">E</span><span style="color: #df2d2e;">m</span>
+      High
+    </h1>
+  </div>
+  <div class="input-container">
+    <input type="text" class="name-input" placeholder="Your name">
+    <div class="error-message"></div>
+  </div>
+  <div class="button-container">
+    <audio id="button-audio" src="../audio/button-click.wav"></audio>
+    <button class="start-button start-button-animation" onclick="startGame()">Start Game</button>
+    <button class="high-score-button high-score-button-animation" onclick="showHighScore()">High
+      Score</button>
+    <button class="about-button about-button-animation" onclick="showAbout()">About</button>
+  </div>
+  <script src="../scripts/main-menu.js"></script>
+  <script src="../scripts/shared.js"></script>
+</body>
+
+</html>

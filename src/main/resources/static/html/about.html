@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/about.css">
+  <link rel="icon" type="image/svg+xml" href="../images/malaysia-flag-rounded.svg">
+</head>
+
+<body>
+  <div class="background-decoration"></div>
+  <div class="about-container">
+    <h1 class="about-title">About</h1>
+    <p class="about-text">This simple web application is a <span class="about-highlight">Hangman-inspired <span
+          style="color: #9A8033;">Ma</span><span style="color: #08086d;">lay</span><span
+          style="color: #df2d2e;">sia</span>
+        history game</span>. Users are able to play two types of
+      games: a <span class="about-highlight">question-based</span> game and a <span
+        class="about-highlight">word-guessing</span> game.<br /><br />In the <span
+        class="about-highlight">question-based
+        game</span>, player are presented with a series of multiple-choice questions and must answer within a <span
+        class="about-highlight">20</span>-second
+      timer. With every correct answer, players increase their <span class="about-highlight">streak</span> with each
+      streak boosting their score. But beware
+      - the clock is ticking, and the <span class="about-highlight">hangman</span> gets closer with each
+      mistake!<br /><br />The
+      <span class="about-highlight">word-guessing game</span> is a timed challenge where players try to guess based on
+      hints. Players aim to score as high as possible in the least amount of time, with only <span
+        class="about-highlight">6</span> attempts before the
+      hangman is drawn.<br /><br />Both games have three difficulty levels: <span class="about-highlight">easy</span>,
+      <span class="about-highlight">medium</span>, and <span class="about-highlight">hard</span>.
+    </p>
+    <audio id="button-audio" src="../audio/button-click.wav"></audio>
+    <div class="back-button-container">
+      <button class="back-button" onclick="backToMainMenu()">Back</button>
+    </div>
+  </div>
+  <script src="../scripts/shared.js"></script>
+  <script src="../scripts/about.js"></script>
+</body>
+
+</html>

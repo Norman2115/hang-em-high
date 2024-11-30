@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/leaderboard.css">
+  <link rel="icon" type="image/svg+xml" href="../images/malaysia-flag-rounded.svg">
+</head>
+
+<body>
+  <div class="background-decoration"></div>
+  <div class="leaderboard-title">Leaderboard</div>
+  <div class="leaderboard-grid">
+    <div class="question-leaderboard">
+      <div class="grid-header-container">
+        <div class="grid-title">Question Game</div>
+        <div class="difficulty-button-container">
+          <button class="difficulty-button question-button difficulty-button-active"
+            onclick="setActiveQuestionButton(this); setLeaderboard('question', 'easy');">Easy</button>
+          <button class="difficulty-button question-button"
+            onclick="setActiveQuestionButton(this); setLeaderboard('question', 'medium');">Medium</button>
+          <button class="difficulty-button question-button"
+            onclick="setActiveQuestionButton(this); setLeaderboard('question', 'hard');">Hard</button>
+        </div>
+      </div>
+      <input type="text" class="search-bar" placeholder="Search by name" id="searchQuestionInput">
+      <div class="leaderboard-row-grid-container leaderboard-question-container">
+        <!-- header -->
+        <div class="leaderboard-row-header-question">
+          <div class="leaderboard-rank">Rank</div>
+          <div class="leaderboard-name">Name</div>
+          <div class="leaderboard-score">Score</div>
+        </div>
+        <!-- data -->
+      </div>
+    </div>
+    <div class="word-leaderboard">
+      <div class="grid-header-container">
+        <div class="grid-title">Word Game</div>
+        <div class="difficulty-button-container">
+          <button class="difficulty-button word-button difficulty-button-active"
+            onclick="setActiveWordButton(this); setLeaderboard('word', 'easy')">Easy</button>
+          <button class="difficulty-button word-button"
+            onclick="setActiveWordButton(this); setLeaderboard('word', 'medium')">Medium</button>
+          <button class="difficulty-button word-button"
+            onclick="setActiveWordButton(this); setLeaderboard('word', 'hard')">Hard</button>
+        </div>
+      </div>
+      <input type="text" class="search-bar" placeholder="Search by name" id="searchWordInput">
+      <div class="leaderboard-row-grid-container leaderboard-word-container">
+        <!-- header -->
+        <div class="leaderboard-row-header-word">
+          <div class="leaderboard-rank">Rank</div>
+          <div class="leaderboard-name">Name</div>
+          <div class="leaderboard-score">Score</div>
+          <div class="leaderboard-time">Time</div>
+        </div>
+        <!-- data -->
+      </div>
+    </div>
+    <div class="profile">
+      <div class="grid-title">Profile</div>
+      <div class="profile-icon"></div>
+      <div class="profile-name">Your Name</div>
+      <div class="profile-score-type-container">
+        <div class="profile-score-type">Question Game</div>
+        <div class="profile-score-container">
+          <div class="profile-score-title">Easy:</div>
+          <div class="profile-score" id="questionEasyScore">0</div>
+        </div>
+        <div class="profile-score-container">
+          <div class="profile-score-title">Medium:</div>
+          <div class="profile-score" id="questionMediumScore">0</div>
+        </div>
+        <div class="profile-score-container">
+          <div class="profile-score-title">Hard:</div>
+          <div class="profile-score" id="questionHardScore">0</div>
+        </div>
+      </div>
+      <div class="profile-score-type-container">
+        <div class="profile-score-type">Word Game</div>
+        <div class="profile-score-container">
+          <div class="profile-score-title">Easy:</div>
+          <div class="profile-score" id="wordEasyScore">0</div>
+        </div>
+        <div class="profile-score-container">
+          <div class="profile-score-title">Medium:</div>
+          <div class="profile-score" id="wordMediumScore">0</div>
+        </div>
+        <div class="profile-score-container">
+          <div class="profile-score-title">Hard:</div>
+          <div class="profile-score" id="wordHardScore">0</div>
+        </div>
+      </div>
+      <audio id="button-audio" src="../audio/button-click.wav"></audio>
+      <div class="back-button-container">
+        <button class="back-button" onclick="backToMainMenu()">Back</button>
+      </div>
+    </div>
+  </div>
+  <script src="../scripts/shared.js"></script>
+  <script src="../scripts/leaderboard.js"></script>
+</body>
+
+</html>

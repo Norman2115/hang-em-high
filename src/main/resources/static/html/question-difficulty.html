@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Difficulty</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/game-difficulty.css">
+  <link rel="icon" type="image/svg+xml" href="../images/malaysia-flag-rounded.svg">
+</head>
+
+<body>
+  <div class="background-decoration"></div>
+  <h1 class="game-difficulty-title">Select Game Difficulty</h1>
+  <div class="game-difficulty-button-container">
+    <audio id="button-audio" src="../audio/button-click.wav"></audio>
+    <button class="game-difficulty-button" onclick="playButtonAudio(); startQuestionGame('easy')">
+      <div class="game-difficulty-icon">
+        <!-- <img src="../images/easy.png" alt="easy-icon" height="200px"> -->
+      </div>
+      Easy
+    </button>
+    <button class="game-difficulty-button" onclick="playButtonAudio(); startQuestionGame('medium')">
+      <div class="game-difficulty-icon">
+        <!-- <img src="../images/medium.png" alt="medium-icon" height="200px"> -->
+      </div>
+      Medium
+    </button>
+    <button class="game-difficulty-button" onclick="playButtonAudio(); startQuestionGame('hard')">
+      <div class="game-difficulty-icon">
+        <!-- <img src="../images/hard.png" alt="hard-icon" height="200px"> -->
+      </div>
+      Hard
+    </button>
+  </div>
+  <button class="back-button" onclick="backToGameType()">Back</button>
+  <script src="../scripts/shared.js"></script>
+  <script src="../scripts/game-difficulty.js"></script>
+</body>
+
+</html>

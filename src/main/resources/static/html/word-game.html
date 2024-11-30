@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Game</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/game-common.css">
+  <link rel="stylesheet" href="../styles/word-game.css">
+  <link rel="icon" type="image/svg+xml" href="../images/malaysia-flag-rounded.svg">
+</head>
+
+<body>
+  <div class="background-decoration"></div>
+  <div class="back-button" onclick="backToGameDifficulty()">Back</div>
+  <div class="hud-container">
+    <div class="timer-container">
+      <div class="timer-logo"></div>
+      <div class="timer-number">0:00</div>
+    </div>
+    <div class="score-container">
+      <div class="score-text">Score</div>
+      <div class="score-number">0</div>
+    </div>
+  </div>
+  <div class="hang-man-container">
+    <div class="hang-man-image"></div>
+  </div>
+  <div class="word-container">
+    <div class="word-text">M _ _ _ _ S _ _</div>
+  </div>
+  <div class="hint-container">
+    <div class="hint-text">Hint: A country in Southeast Asia</div>
+  </div>
+  <audio id="correct-audio" src="../audio/right-answer.mp3"></audio>
+  <audio id="wrong-audio" src="../audio/wrong-answer.mp3"></audio>
+  <div class="keyboard-container">
+  </div>
+  <audio id="button-audio" src="../audio/button-click.wav"></audio>
+  <audio id="game-over-audio" src="../audio/brass-fail.mp3"></audio>
+  <audio id="game-win-audio" src="../audio/victory-sound.mp3"></audio>
+  <audio id="game-win-audio-2" src="../audio/YouWin.wav"></audio>
+  <div class="modal" id="game-modal" style="display: none;">
+    <div class="modal-content">
+      <h2 class="modal-title" id="modal-title">Game Over</h2>
+      <p class="modal-text">Your score is <span class="score" id="modal-score">0</span></p>
+      <div class="modal-buttons">
+        <button class="modal-button" id="play-again-button" onclick="playAgain()">Play Again</button>
+        <button class="modal-button" id="back-to-menu-button" onclick="backToMenu()">Back to Menu</button>
+      </div>
+    </div>
+  </div>
+  <audio id="countdown-audio" src="../audio/countdown.mp3"></audio>
+  <div class="countdown-container">
+    <div class="countdown-text">3</div>
+  </div>
+  <script src="../scripts/shared.js"></script>
+  <script src="../scripts/word-game.js"></script>
+</body>
+
+</html>
