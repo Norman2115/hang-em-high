@@ -18,7 +18,7 @@ public class FirebaseConfig {
   @PostConstruct
   public FirebaseApp firebaseApp() {
     // Change the path after adding new private key
-    ClassPathResource serviceAccount = new ClassPathResource("");
+    ClassPathResource serviceAccount = new ClassPathResource("firebase/hang-em-high-firebase-adminsdk-mj3e9-3025f1eb3f.json");
 
     try {
       FirebaseOptions options = FirebaseOptions.builder()
