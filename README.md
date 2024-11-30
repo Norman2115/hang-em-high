@@ -48,7 +48,7 @@ mvn spring-boot:run --debug
 http://localhost:8080/html/index.html
 ```
 
-## Team Members
+## Contributors
 * Teo Chung Henn
 * Liew Wen Yen
 * Chong Ken Ji
